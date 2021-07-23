@@ -26,3 +26,20 @@ header {
     background-color: #a493c0;
     padding: 10px;
 }
+
+nav a:visited, /*check if a link has been visited*/
+nav a:link { /*gets the default state of a link*/
+    color: #fff;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block; /*lets us still have control over width, margin & padding*/
+    list-style-type: none;
+    margin: 0 5px 0 5px;
+}
