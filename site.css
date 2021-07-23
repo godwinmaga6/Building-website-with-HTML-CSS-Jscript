@@ -74,3 +74,18 @@ aside {
 article {
     width: 75%;
 }
+
+/* NOTE: all of the style above are called Global style */
+/* Which means that they'd apply to every page on our website */
+
+/* Now lets dive into adding Media queries to target desktop devices*/
+
+@media only screen and (min-width: 768px) { /*Applies to only screen wider from 768px & above*/
+    main {
+        display: flex;
+    }
+
+    aside {
+        margin-left: 2em;
+    }
+}
