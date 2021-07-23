@@ -51,3 +51,13 @@ main {
     padding-bottom: 3em;
     min-height: 85%;
 }
+
+footer {
+    display: inline;
+    padding: 15px;
+}
+
+footer > nav > li {
+    display: inline-block;
+    list-style-type: none;
+}
