@@ -1,0 +1,4 @@
+* {
+    margin: 0; /* this reset margin for all element which helps us not to struggle with any margin default value */
+}
+
