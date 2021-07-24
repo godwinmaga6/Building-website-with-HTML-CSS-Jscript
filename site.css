@@ -75,6 +75,10 @@ article {
     width: 75%;
 }
 
+.columns {
+    display: flex;
+}
+
 /* NOTE: all of the style above are called Global style */
 /* Which means that they'd apply to every page on our website */
 
@@ -87,5 +91,9 @@ article {
 
     aside {
         margin-left: 2em;
+    }
+
+    .columns-desktop {
+        display: flex;
     }
 }
