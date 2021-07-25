@@ -52,4 +52,28 @@
         </nav>
     </footer>
 </body>
+<script>
+    window.addEventListener("DOMContentLoaded", ()=>{
+        const orderButtons = document.querySelectorAll('button[data-order]');
+        orderButtons.forEach((button)=>{
+            button.addEventListener("click", function(e){
+                const button = e.currentTarget; //gives us reference to the button that was clicked on
+                const container = button.parentNode; //gets the parent of the button that was clicked
+
+                const order = { //created a simple object literal
+                    id: button.getAttribute("data-order"),
+                    title: container.querySelector(".title").innerText,
+                    price: container.querySelector(".price").innerText,
+                    desc: container.querySelector(".desc").innerText
+                };
+
+                //saving our data to localStorage
+                localStorage.setItem("order", JSON.stringify(order)); //localStorage does not know how to save objects only strings, this is why we converted it using JSON function stringify() 
+                // NOTE: JSON stand for javascript object notation
+                const url = window.location.href.replace("pies.html", "order.html"); //gets the current window url & switches it with the location url we want to re-direct user to.
+                window.location.href = url; //re-directs user to the new order page
+            })
+        })
+    })
+</script>
 </html>
