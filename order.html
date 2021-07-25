@@ -21,7 +21,70 @@
     <main> <!-- added main content of the page NOTE: This content is the primary content to SEO-->
         <aside><img src="images/logo.png" alt="Bethany's Pie Shop"></aside> <!-- added logo -->
         <article>
-           
+           <h1>Order</h1>
+           <!-- input firstname -->
+           <form action="http://localhost:8080/api/post" method="POST">
+            <div class="input-group">
+                <div><label for="first-name">First name</label></div>
+                <div><input type="text" id="first-name" name="first-name"></div>
+            </div> 
+            <!-- input lastname   -->
+            <div class="input-group">
+                <div><label for="last-name">Last name</label></div>
+                <div><input type="text" id="last-name" name="last-name"></div>
+            </div>
+            <!-- input address    -->
+            <div class="input-group">
+                <div><label for="address">Address</label></div>
+                <div><input type="text" id="address" name="address"></div>
+            </div> 
+            <!-- select state   -->
+            <div class="input-group">
+                <div><label for="state">State of Residence</label></div>
+                <div>
+                    <select name="state" id="state">
+                        <option value="" selected>[Select state]</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Zaria">Zaria</option>
+                        <option value="Mando">Mando</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Los Angelous">Los Angelous</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Zaria">Zaria</option>
+                        <option value="Mando">Mando</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Los Angelous">Los Angelous</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Zaria">Zaria</option>
+                        <option value="Mando">Mando</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Los Angelous">Los Angelous</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Zaria">Zaria</option>
+                        <option value="Mando">Mando</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Los Angelous">Los Angelous</option>
+                    </select>
+                </div>
+            </div>   
+            <!-- input postal code -->
+            <div class="input-group">
+                <div><label for="postal-code">Postal code</label></div>
+                <div><input type="text" id="postal-code" name="postal-code"></div>
+            </div>
+
+            <!-- input text area -->
+            <div class="input-group">
+                <div><label for="comments">Add a coment</label></div>
+                <div><textarea name="comments" id="comments" cols="30" rows="10"></textarea></div>
+            </div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Order">
+           </form>
         </article>
     </main>
     <footer>
